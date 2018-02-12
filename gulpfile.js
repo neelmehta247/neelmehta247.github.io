@@ -27,8 +27,6 @@ gulp.task('less', function() {
         }))
 });
 
-console.log(new Date().getTimezoneOffset());
-
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
     return gulp.src('css/grayscale.css')
